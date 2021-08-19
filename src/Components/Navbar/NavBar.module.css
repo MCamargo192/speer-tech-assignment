@@ -1,0 +1,19 @@
+
+
+.nav {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  background-color: transparent;
+  z-index: 100;
+  top: 5%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 5%;
+}
+
+text {
+  fill: hsl(0, 0%, 0%);
+}
+

@@ -1,0 +1,46 @@
+.button-container {
+    width: 200px;
+    position: relative;
+    margin-top: var(--top);
+    left: 40%;
+    z-index: 2;
+}
+.btn {
+    display: block;
+    height: 90px;
+    width: 200px;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+.btn:after {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    background: hsl(0, 0%, 0%);
+    background: linear-gradient(45deg, hsl(345, 100%, 88%) 0%, hsl(345, 100%, 72%) 25%, hsl(345, 100%, 66%) 50%, hsl(345, 100%, 52%) 75%, hsl(345, 100%, 39%) 100%);
+    height: 50px;
+    width: 372px;
+    z-index: -1;
+    transform: translateX(-280px);
+    transition: transform 300ms ease-in;
+}
+
+.btn:hover {
+    color:hsl(0, 0%, 3%);
+}
+.btn:hover:after {
+    transform: translateX(-200px);
+}
+.btn span {
+    position: relative;
+    top: 15%;
+}

@@ -1,0 +1,60 @@
+.btn {
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin: 8px 0;
+    top: 5px;
+    background: none;
+    border: 0;
+    float: right;
+}
+
+.btn-line {
+    display: flex;
+    width: 30px;
+    height: 2px;
+    background: hsl(0, 0%, 0%);
+    position: absolute;
+    transition: .5s;
+}
+
+.btn-line:nth-child(1) {
+    top: 0;
+    left: 0;   
+}
+
+.btn-line:nth-child(2) {
+    top: 50%;
+    left: 0;   
+    transform: translateY(-50%);
+}
+
+.btn-line:nth-child(3) {
+    bottom: 0;
+    left: 0;   
+}
+
+.btn:hover .btn-line:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.btn:hover .btn-line:nth-child(3) {
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+.btn.is-active .btn-line:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(-40deg);
+}
+
+.btn.is-active .btn-line:nth-child(2) {
+    transform: translateY(-50%) rotate(-40deg);
+}
+
+.btn.is-active .btn-line:nth-child(3) {
+    bottom: 50%;
+    transform: translateY(50%) rotate(40deg);
+}
