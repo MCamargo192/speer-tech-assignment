@@ -1,7 +1,7 @@
 import Avatar from '@material-ui/core/Avatar';
 import styles from './Reviews.module.css';
 
-const Reviews = props => {
+const Reviews = () => {
     const reviews = [
         { photo: "https://upload.wikimedia.org/wikipedia/commons/7/7a/Britney_Spears_2013.jpg", person: 'Britney Spears', job: 'artist', text: '"Love it, it’s the Best. I can’t live without it!"' },
         { photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Scooter_Braun_headshot.jpg/640px-Scooter_Braun_headshot.jpg", person: 'Scooter Braun', job: 'Talent Manager', text: '"An amazing user experience. I love it"' },

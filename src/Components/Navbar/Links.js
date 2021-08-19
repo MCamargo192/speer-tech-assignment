@@ -2,7 +2,7 @@ import { useState } from 'react';
 import HamburgerBtn from './HamburgerBtn';
 import styles from './Links.module.css';
 
-const Links = props => {
+const Links = () => {
     const [showMenu, setShowMenu] = useState(false);
     const menuHandler = () => {
         setShowMenu(prevState => !prevState);

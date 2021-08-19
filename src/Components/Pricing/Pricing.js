@@ -1,7 +1,7 @@
 import WhiteBtn from '../UI/WhiteBtn';
 import styles from './Pricing.module.css';
 
-const Pricing = props => {
+const Pricing = () => {
     const plans = [
         { title: 'Basic Plan for $9 a month', info: ['Great sound quality', 'Good music library ', 'Excellent song choices', 'Basic amount of visuals'] },
         { title: 'Advanced Plan for $99 per year', info: ['Amazing sound quality', 'Great music library ', 'Even better song choices', 'Amazing visuals'] },

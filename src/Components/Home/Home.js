@@ -4,7 +4,7 @@ import HeroSection from "./HeroSection/HeroSection";
 import RedSection from "./RedSection/RedSection";
 import YellowSection from "./YellowSection/YellowSection";
 
-const Home = props => {
+const Home = () => {
     return (
         <Fragment>
             <HeroSection />

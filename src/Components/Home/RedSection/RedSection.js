@@ -4,7 +4,7 @@ import VolumeUpIcon from '@material-ui/icons/VolumeUp';
 import VolumeOffIcon from '@material-ui/icons/VolumeOff';
 import styles from './RedSection.module.css';
 import WhiteBtn from '../../UI/WhiteBtn';
-import ProductCarousel from './ProductCarousel';
+import Products from './Products';
 
 const RedSection = () => {
     const [playMusic, setPlayMusic] = useState(false);
@@ -31,7 +31,7 @@ const RedSection = () => {
                 </IconButton>
             </div>
             
-           <ProductCarousel products={products}/>
+           <Products products={products}/>
             <div className={styles.buttons}>
                 <WhiteBtn text={"Try it now"} href={'/pricing'} top={40}/>
                 <WhiteBtn text={"See demo"} />
